@@ -49,17 +49,22 @@ To run this project locally, follow these steps:
 
 ## File Structure
 
-<!-- ```plaintext -->
+ ```plaintext
 src/
-├── app/
-│   ├── components/
-│   │   ├── undo-redo-form/
-│   │   │   ├── undo-redo-form.component.ts
-│   │   │   ├── undo-redo-form.component.html
-│   │   │   ├── undo-redo-form.component.scss
-│   ├── services/
-│   │   ├── state.service.ts
-
+|-- app/
+|   |-- components/
+|   |   |-- undo-redo-form/
+|   |   |   |-- undo-redo-form.component.ts
+|   |   |   |-- undo-redo-form.component.html
+|   |   |   |-- undo-redo-form.component.scss
+|   |   |   |-- undo-redo-form.component.spec.ts
+|   |-- services/
+|   |   |-- state.service.ts
+|   |-- app.module.ts
+|-- assets/
+|-- environments/
+|-- main.ts
+```
 ## Implementation Details
 ### UndoRedoFormComponent
 
