@@ -1,0 +1,26 @@
+<mat-card>
+  <form [formGroup]="form">
+    <mat-form-field>
+      <input matInput placeholder="Name" formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Email" formControlName="email">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Choose Gender</mat-label>
+      <mat-select formControlName="gender">
+        <mat-option value="male">Male</mat-option>
+        <mat-option value="female">Female</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-checkbox formControlName="subscribe">Subscribe</mat-checkbox>
+
+    <div>
+      <button [disabled]="!canUndo" mat-raised-button color="primary" (click)="undo()"><mat-icon>undo</mat-icon>
+        Undo</button>
+      <button [disabled]="!canRedo" mat-raised-button color="accent" (click)="redo()"><mat-icon>redo</mat-icon>
+        Redo</button>
+    </div>
+  </form>
+</mat-card>
